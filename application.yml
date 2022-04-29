@@ -12,7 +12,14 @@ management:
 info:
   env:
     enabled: true
-#
+
+spring:
+  data:
+    zipkin:
+      baseUrl: http://zipkin:9411/
+      enabled: true
+      sender:
+        type: rabbit
 #eureka:
 #  client:
 #    fetchRegistry: true
